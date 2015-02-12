@@ -55,90 +55,86 @@ Step by step, the script does the following:
 
 This table presents the results of the for loop using gsub() in order to replace all the original signal variables measures short names with full length explicit text. This is from the content of "conv_rawtidy_names.txt" file.
 
- rawnames   |tidynames     
-------------|---------------
-|subject    |subject       |
-|set        |set           |
+ rawnames                              |tidynames     
+---------------------------------------|-----------------------------------------------------------------------------
+|tBodyAcc.mean...X                     |time domain body acceleration X axial direction mean                        |
+|tBodyAcc.mean...Y                     |time domain body acceleration Y axial direction mean                        |
+|tBodyAcc.mean...Z                     |time domain body acceleration Z axial direction mean                        |
+|tBodyAcc.std...X                      |time domain body acceleration X axial direction standard deviation          |
+|tBodyAcc.std...Y                      |time domain body acceleration Y axial direction standard deviation          |
+|tBodyAcc.std...Z                      |time domain body acceleration Z axial direction standard deviation          |
+|tGravityAcc.mean...X                  |time domain gravity acceleration X axial direction mean                     |
+|tGravityAcc.mean...Y                  |time domain gravity acceleration Y axial direction mean                     |
+|tGravityAcc.mean...Z                  |time domain gravity acceleration Z axial direction mean                     |
+|tGravityAcc.std...X                   |time domain gravity acceleration X axial direction standard deviation       |
+|tGravityAcc.std...Y                   |time domain gravity acceleration Y axial direction standard deviation       |
+|tGravityAcc.std...Z                   |time domain gravity acceleration Z axial direction standard deviation       |
+|tBodyAccJerk.mean...X                 |time domain body acceleration jerk X axial direction mean                   |
+|tBodyAccJerk.mean...Y                 |time domain body acceleration jerk Y axial direction mean                   |
+|tBodyAccJerk.mean...Z                 |time domain body acceleration jerk Z axial direction mean                   |
+|tBodyAccJerk.std...X                  |time domain body acceleration jerk X axial direction standard deviation     |
+|tBodyAccJerk.std...Y                  |time domain body acceleration jerk Y axial direction standard deviation     |
+|tBodyAccJerk.std...Z                  |time domain body acceleration jerk Z axial direction standard deviation     |
+|tBodyGyro.mean...X                    |time domain body velocity X axial direction mean                            |
+|tBodyGyro.mean...Y                    |time domain body velocity Y axial direction mean                            |
+|tBodyGyro.mean...Z                    |time domain body velocity Z axial direction mean                            |
+|tBodyGyro.std...X                     |time domain body velocity X axial direction standard deviation              |
+|tBodyGyro.std...Y                     |time domain body velocity Y axial direction standard deviation              |
+|tBodyGyro.std...Z                     |time domain body velocity Z axial direction standard deviation              |
+|tBodyGyroJerk.mean...X                |time domain body velocity jerk X axial direction mean                       |
+|tBodyGyroJerk.mean...Y                |time domain body velocity jerk Y axial direction mean                       |
+|tBodyGyroJerk.mean...Z                |time domain body velocity jerk Z axial direction mean                       |
+|tBodyGyroJerk.std...X                 |time domain body velocity jerk X axial direction standard deviation         |
+|tBodyGyroJerk.std...Y                 |time domain body velocity jerk Y axial direction standard deviation         |
+|tBodyGyroJerk.std...Z                 |time domain body velocity jerk Z axial direction standard deviation         |
+|tBodyAccMag.mean..                    |time domain body acceleration magnitude mean                                |
+|tBodyAccMag.std..                     |time domain body acceleration magnitude standard deviation                  |
+|tGravityAccMag.mean..                 |time domain gravity acceleration magnitude mean                             |
+|tGravityAccMag.std..                  |time domain gravity acceleration magnitude standard deviation               |
+|tBodyAccJerkMag.mean..                |time domain body acceleration jerk magnitude mean                           |
+|tBodyAccJerkMag.std..                 |time domain body acceleration jerk magnitude standard deviation             |
+|tBodyGyroMag.mean..                   |time domain body velocity magnitude mean                                    |
+|tBodyGyroMag.std..                    |time domain body velocity magnitude standard deviation                      |
+|tBodyGyroJerkMag.mean..               |time domain body velocity jerk magnitude mean                               |
+|tBodyGyroJerkMag.std..                |time domain body velocity jerk magnitude standard deviation                 |
+|fBodyAcc.mean...X                     |frequency domain body acceleration X axial direction mean                   |
+|fBodyAcc.mean...Y                     |frequency domain body acceleration Y axial direction mean                   |
+|fBodyAcc.mean...Z                     |frequency domain body acceleration Z axial direction mean                   |
+|fBodyAcc.std...X                      |frequency domain body acceleration X axial direction standard deviation     |
+|fBodyAcc.std...Y                      |frequency domain body acceleration Y axial direction standard deviation     |
+|fBodyAcc.std...Z                      |frequency domain body acceleration Z axial direction standard deviation     |
+|fBodyAcc.meanFreq...X                 |frequency domain body acceleration X axial direction frequency mean         |
+|fBodyAcc.meanFreq...Y                 |frequency domain body acceleration Y axial direction frequency mean         |
+|fBodyAcc.meanFreq...Z                 |frequency domain body acceleration Z axial direction frequency mean         |
+|fBodyAccJerk.mean...X                 |frequency domain body acceleration jerk X axial direction mean              |
+|fBodyAccJerk.mean...Y                 |frequency domain body acceleration jerk Y axial direction mean              |
+|fBodyAccJerk.mean...Z                 |frequency domain body acceleration jerk Z axial direction mean              |
+|fBodyAccJerk.std...X                  |frequency domain body acceleration jerk X axial direction standard deviation|
+|fBodyAccJerk.std...Y                  |frequency domain body acceleration jerk Y axial direction standard deviation|
+|fBodyAccJerk.std...Z                  |frequency domain body acceleration jerk Z axial direction standard deviation|
+|fBodyAccJerk.meanFreq...X             |frequency domain body acceleration jerk X axial direction frequency mean    |
+|fBodyAccJerk.meanFreq...Y             |frequency domain body acceleration jerk Y axial direction frequency mean    |
+|fBodyAccJerk.meanFreq...Z             |frequency domain body acceleration jerk Z axial direction frequency mean    |
+|fBodyGyro.mean...X                    |frequency domain body velocity X axial direction mean                       |
+|fBodyGyro.mean...Y                    |frequency domain body velocity Y axial direction mean                       |
+|fBodyGyro.mean...Z                    |frequency domain body velocity Z axial direction mean                       |
+|fBodyGyro.std...X                     |frequency domain body velocity X axial direction standard deviation         |
+|fBodyGyro.std...Y                     |frequency domain body velocity Y axial direction standard deviation         |
+|fBodyGyro.std...Z                     |frequency domain body velocity Z axial direction standard deviation         |
+|fBodyGyro.meanFreq...X                |frequency domain body velocity X axial direction frequency mean             |
+|fBodyGyro.meanFreq...Y                |frequency domain body velocity Y axial direction frequency mean             |
+|fBodyGyro.meanFreq...Z                |frequency domain body velocity Z axial direction frequency mean             |
+|fBodyAccMag.mean..                    |frequency domain body acceleration magnitude mean                           |
+|fBodyAccMag.std..                     |frequency domain body acceleration magnitude standard deviation             |
+|fBodyAccMag.meanFreq..                |frequency domain body acceleration magnitude frequency mean                 |
+|fBodyBodyAccJerkMag.mean..            |frequency domain body acceleration jerk magnitude mean                      |
+|fBodyBodyAccJerkMag.std..             |frequency domain body acceleration jerk magnitude standard deviation        |
+|fBodyBodyAccJerkMag.meanFreq..        |frequency domain body acceleration jerk magnitude frequency mean            |
+|fBodyBodyGyroMag.mean..               |frequency domain body velocity magnitude mean                               |
+|fBodyBodyGyroMag.std..                |frequency domain body velocity magnitude standard deviation                 |
+|fBodyBodyGyroMag.meanFreq..           |frequency domain body velocity magnitude frequency mean                     |
+|fBodyBodyGyroJerkMag.mean..           |frequency domain body velocity jerk magnitude mean                          |
+|fBodyBodyGyroJerkMag.std..            |frequency domain body velocity jerk magnitude standard deviation            |
+|fBodyBodyGyroJerkMag.meanFreq..       |frequency domain body velocity jerk magnitude frequency mean                |
+---------------------------------------|-----------------------------------------------------------------------------
 
-|activity|activity|
-|tBodyAcc.mean...X|time domain body acceleration X axial direction mean|
-|tBodyAcc.mean...Y|time domain body acceleration Y axial direction mean|
-|tBodyAcc.mean...Z|time domain body acceleration Z axial direction mean|
-|tBodyAcc.std...X|time domain body acceleration X axial direction standard deviation|
-|tBodyAcc.std...Y|time domain body acceleration Y axial direction standard deviation|
-|tBodyAcc.std...Z|time domain body acceleration Z axial direction standard deviation|
-|tGravityAcc.mean...X|time domain gravity acceleration X axial direction mean|
-|tGravityAcc.mean...Y|time domain gravity acceleration Y axial direction mean|
-|tGravityAcc.mean...Z|time domain gravity acceleration Z axial direction mean|
-|tGravityAcc.std...X|time domain gravity acceleration X axial direction standard deviation|
-|tGravityAcc.std...Y|time domain gravity acceleration Y axial direction standard deviation|
-|tGravityAcc.std...Z|time domain gravity acceleration Z axial direction standard deviation|
-|tBodyAccJerk.mean...X|time domain body acceleration jerk X axial direction mean|
-|tBodyAccJerk.mean...Y|time domain body acceleration jerk Y axial direction mean|
-|tBodyAccJerk.mean...Z|time domain body acceleration jerk Z axial direction mean|
-|tBodyAccJerk.std...X|time domain body acceleration jerk X axial direction standard deviation|
-|tBodyAccJerk.std...Y|time domain body acceleration jerk Y axial direction standard deviation|
-|tBodyAccJerk.std...Z|time domain body acceleration jerk Z axial direction standard deviation|
-|tBodyGyro.mean...X|time domain body velocity X axial direction mean|
-|tBodyGyro.mean...Y|time domain body velocity Y axial direction mean|
-|tBodyGyro.mean...Z|time domain body velocity Z axial direction mean|
-|tBodyGyro.std...X|time domain body velocity X axial direction standard deviation|
-|tBodyGyro.std...Y|time domain body velocity Y axial direction standard deviation|
-|tBodyGyro.std...Z|time domain body velocity Z axial direction standard deviation|
-|tBodyGyroJerk.mean...X|time domain body velocity jerk X axial direction mean|
-|tBodyGyroJerk.mean...Y|time domain body velocity jerk Y axial direction mean|
-|tBodyGyroJerk.mean...Z|time domain body velocity jerk Z axial direction mean|
-|tBodyGyroJerk.std...X|time domain body velocity jerk X axial direction standard deviation|
-|tBodyGyroJerk.std...Y|time domain body velocity jerk Y axial direction standard deviation|
-|tBodyGyroJerk.std...Z|time domain body velocity jerk Z axial direction standard deviation|
-|tBodyAccMag.mean..|time domain body acceleration magnitude mean|
-|tBodyAccMag.std..|time domain body acceleration magnitude standard deviation|
-|tGravityAccMag.mean..|time domain gravity acceleration magnitude mean|
-|tGravityAccMag.std..|time domain gravity acceleration magnitude standard deviation|
-|tBodyAccJerkMag.mean..|time domain body acceleration jerk magnitude mean|
-|tBodyAccJerkMag.std..|time domain body acceleration jerk magnitude standard deviation|
-|tBodyGyroMag.mean..|time domain body velocity magnitude mean|
-|tBodyGyroMag.std..|time domain body velocity magnitude standard deviation|
-|tBodyGyroJerkMag.mean..|time domain body velocity jerk magnitude mean|
-|tBodyGyroJerkMag.std..|time domain body velocity jerk magnitude standard deviation|
-|fBodyAcc.mean...X|frequency domain body acceleration X axial direction mean|
-|fBodyAcc.mean...Y|frequency domain body acceleration Y axial direction mean|
-|fBodyAcc.mean...Z|frequency domain body acceleration Z axial direction mean|
-|fBodyAcc.std...X|frequency domain body acceleration X axial direction standard deviation|
-|fBodyAcc.std...Y|frequency domain body acceleration Y axial direction standard deviation|
-|fBodyAcc.std...Z|frequency domain body acceleration Z axial direction standard deviation|
-|fBodyAcc.meanFreq...X|frequency domain body acceleration X axial direction frequency mean|
-|fBodyAcc.meanFreq...Y|frequency domain body acceleration Y axial direction frequency mean|
-|fBodyAcc.meanFreq...Z|frequency domain body acceleration Z axial direction frequency mean|
-|fBodyAccJerk.mean...X|frequency domain body acceleration jerk X axial direction mean|
-|fBodyAccJerk.mean...Y|frequency domain body acceleration jerk Y axial direction mean|
-|fBodyAccJerk.mean...Z|frequency domain body acceleration jerk Z axial direction mean|
-|fBodyAccJerk.std...X|frequency domain body acceleration jerk X axial direction standard deviation|
-|fBodyAccJerk.std...Y|frequency domain body acceleration jerk Y axial direction standard deviation|
-|fBodyAccJerk.std...Z|frequency domain body acceleration jerk Z axial direction standard deviation|
-|fBodyAccJerk.meanFreq...X|frequency domain body acceleration jerk X axial direction frequency mean|
-|fBodyAccJerk.meanFreq...Y|frequency domain body acceleration jerk Y axial direction frequency mean|
-|fBodyAccJerk.meanFreq...Z|frequency domain body acceleration jerk Z axial direction frequency mean|
-|fBodyGyro.mean...X|frequency domain body velocity X axial direction mean|
-|fBodyGyro.mean...Y|frequency domain body velocity Y axial direction mean|
-|fBodyGyro.mean...Z|frequency domain body velocity Z axial direction mean|
-|fBodyGyro.std...X|frequency domain body velocity X axial direction standard deviation|
-|fBodyGyro.std...Y|frequency domain body velocity Y axial direction standard deviation|
-|fBodyGyro.std...Z|frequency domain body velocity Z axial direction standard deviation|
-|fBodyGyro.meanFreq...X|frequency domain body velocity X axial direction frequency mean|
-|fBodyGyro.meanFreq...Y|frequency domain body velocity Y axial direction frequency mean|
-|fBodyGyro.meanFreq...Z|frequency domain body velocity Z axial direction frequency mean|
-|fBodyAccMag.mean..|frequency domain body acceleration magnitude mean|
-|fBodyAccMag.std..|frequency domain body acceleration magnitude standard deviation|
-|fBodyAccMag.meanFreq..|frequency domain body acceleration magnitude frequency mean|
-|fBodyBodyAccJerkMag.mean..|frequency domain body acceleration jerk magnitude mean|
-|fBodyBodyAccJerkMag.std..|frequency domain body acceleration jerk magnitude standard deviation|
-|fBodyBodyAccJerkMag.meanFreq..|frequency domain body acceleration jerk magnitude frequency mean|
-|fBodyBodyGyroMag.mean..|frequency domain body velocity magnitude mean|
-|fBodyBodyGyroMag.std..|frequency domain body velocity magnitude standard deviation|
-|fBodyBodyGyroMag.meanFreq..|frequency domain body velocity magnitude frequency mean|
-|fBodyBodyGyroJerkMag.mean..|frequency domain body velocity jerk magnitude mean|
-|fBodyBodyGyroJerkMag.std..|frequency domain body velocity jerk magnitude standard deviation|
-|fBodyBodyGyroJerkMag.meanFreq..|frequency domain body velocity jerk magnitude frequency mean|
-
---------------------------------------------------------------
