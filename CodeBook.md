@@ -136,5 +136,3 @@ This table presents the results of the for loop using gsub() in order to replace
 |fBodyBodyGyroJerkMag.mean..           |frequency domain body velocity jerk magnitude mean                          |
 |fBodyBodyGyroJerkMag.std..            |frequency domain body velocity jerk magnitude standard deviation            |
 |fBodyBodyGyroJerkMag.meanFreq..       |frequency domain body velocity jerk magnitude frequency mean                |
----------------------------------------|-----------------------------------------------------------------------------
-
