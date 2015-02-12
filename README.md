@@ -139,7 +139,7 @@ These variables are based on the values from the .txt files which are described 
 
 5. **signalnormalizedvaluesmean** - from "X_train.txt" and "X_test.txt". Normalized difference values (between -1 and 1) mean of signal variable measures values grouped by subject, activity and signal variable measure name.
 
-## Outputs: "tidydata" and "rawdata" content after executing "run_analysis.R" 
+## Outputs: "tidydata" and "rawdata" folders content after executing "run_analysis.R" 
 
 "**tidydata**" folder is created in the working directory if the script is used. At the end of the processing, it contains:
   
