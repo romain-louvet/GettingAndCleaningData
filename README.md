@@ -74,12 +74,12 @@ See from "README.txt" file extracted from the raw data set zip file (Author: Jor
     velocity at a constant rate of 50Hz. The experiments have been video-recorded 
     to label the data manually. The obtained dataset has been randomly partitioned 
     into two sets, where 70% of the volunteers was selected for generating the 
-    training data and 30% the test data.* 
+    training data and 30% the test data.
 
     License:
 
     Use of this dataset in publications must be acknowledged by referencing the 
-    following publication [1]*
+    following publication [1]
 
     [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. 
     Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass 
@@ -88,7 +88,7 @@ See from "README.txt" file extracted from the raw data set zip file (Author: Jor
 
     This dataset is distributed AS-IS and no responsibility implied or explicit 
     can be addressed to the authors or their institutions for its use or misuse. 
-    Any commercial use is prohibited.*
+    Any commercial use is prohibited.
 
     Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.*
 
