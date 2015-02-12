@@ -28,7 +28,7 @@ The data linked to from the course website represent data collected from a senso
 ## Why is "tidydataset" tidy?
 
 
-Originnally the data were "raw" (multiple files, non explicit variable names, ...) and the goal of this project was to make them "tidy" as if we were to perform analysis on them after. After executing the script "run_analysis.R", it returns a loaded data set called "tidydataset". This data set is tidy because:
+Originally the data were "raw" (multiple files, non-explicit variable names, ...) and the goal of this project was to make them "tidy" as if we were to perform analysis on them after. After executing the script "run_analysis.R", it returns a loaded data set called "tidydataset". This data set is tidy because:
 
 * each column is a variable (see 'Output: "tidydataset" variables' below), each row an observation (the mean of a signal variable measure per subject), moreover there is no NA
 * it's using activity name labels instead of original numbers (which was a requirement)
