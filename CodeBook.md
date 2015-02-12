@@ -9,7 +9,7 @@ output: html_document
 
 This document describes any transformations performed with "run_analysis.R" script in order to clean up a raw data set and creating a tidy data set which would meet the requirements of the "Getting and Cleaning Data Course Project" assignment.
 
-For more informations, see "README.md"
+For more information, see "README.md"
 
 ## General script description
 
@@ -24,8 +24,8 @@ For more informations, see "README.md"
 
 Moreover, during the execution of this script two folders are created in the working directory:
 
-* rawdataset: contains the raw data ziped and unziped files
-* tidydataset: contains the text outputs 
+* "rawdataset": contains the raw data zipped and unzipped files
+* "tidydataset": contains the text outputs 
 
 The outputs at the end of the script are "tidydataset" loaded in R (required), "tidydataset.txt" (required) and "conv_rawtidy_names.txt" (not required).
 
@@ -33,10 +33,10 @@ The outputs at the end of the script are "tidydataset" loaded in R (required), "
 
 Step by step, the script does the following:
 
-* checks if the required libraries are installed (if not asks to install them with install.packages()) using a for loop, a if statement and the function installed.packages()
+* checks if the required libraries are installed (if not asks to install them with install.packages()) using a for loop, an if statement and the function installed.packages()
 * loads "dplyr", "data.table" and "reshape2" using library()
-* checks if the resulting tidy data set "tidydataset" already exists (if not executes the processing, else signals that "tidydataset" already exists) using a if statement and the function exists()
-* downloads the data only if not already downloaded, unzips it, and creates "tidydataset" and "rawdataset" in the working directory, using download.file(), unzip(), and dir.create(). Saves the date of downloading in "UCI_HAR_Dataset_downldate.txt" (rawdata folder) using writeLines() and date()
+* checks if the resulting tidy data set "tidydataset" already exists (if not executes the processing, else signals that "tidydataset" already exists) using an if statement and the function exists()
+* downloads the data only if not already downloaded, unzips it, and creates "tidydataset" and "rawdataset" in the working directory, using download.file(), unzip(), and dir.create(). Saves the date of downloading in "UCI_HAR_Dataset_downldate.txt" ("rawdata" folder) using writeLines() and date()
 * reads test and train data sets, names the column "subject" and "activity", and creates a column "set", using fread(), rename() and mutate()
 * reads the features labels (variable measures), reads the variable measures values and names the column with the features labels previously read for train and test data set, using fread(), read.table() with argument "col.names=featureslabel"
 * merges the loaded data for each set (test and train) by column and then the results by rows, using cbind() and rbind()
