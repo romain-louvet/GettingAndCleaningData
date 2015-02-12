@@ -55,7 +55,8 @@ Step by step, the script does the following:
 
 This table presents the results of the for loop using gsub() in order to replace all the original signal variables measures short names with full length explicit text. This is from the content of "conv_rawtidy_names.txt" file.
 
-|rawnames   |tidynames     |
+ rawnames   |tidynames     
+------------|---------------
 |subject    |subject       |
 |set        |set           |
 
