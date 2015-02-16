@@ -1,6 +1,6 @@
 ---
 title: "README - Getting and Cleaning Data Course Project"
-author: 
+author: Romain Louvet
 date: "Tuesday, February 10, 2015"
 output: html_document
 ---
