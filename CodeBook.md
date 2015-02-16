@@ -1,6 +1,6 @@
 ---
 title: "CodeBook - Getting and Cleaning Data Course Project"
-author:
+author: Romain Louvet
 date: "Tuesday, February 12, 2015"
 output: html_document
 ---
