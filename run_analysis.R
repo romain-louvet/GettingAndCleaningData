@@ -4,7 +4,7 @@
 ## Student : Romain Louvet,                   ##
 ## University of Avignon, France              ##
 ## first edition: 06/02/2015                  ##
-## latest version : 11/02/2015                ##
+## latest version : 17/02/2015                ##
 ################################################
 
 ## time script
@@ -158,41 +158,41 @@ if(!(exists("tidydataset"))){
   tidynames <- names(dataselec)
   
   # create a list for gsub loop
-  listrenames <- list(c("\\.mean\\.\\.\\.X"," X axial direction mean"),
-                      c("\\.mean\\.\\.\\.Y"," Y axial direction mean"),
-                      c("\\.mean\\.\\.\\.Z"," Z axial direction mean"),
+  listrenames <- list(c("\\.mean\\.\\.\\.X","_X_axial_direction_mean"),
+                      c("\\.mean\\.\\.\\.Y","_Y_axial_direction_mean"),
+                      c("\\.mean\\.\\.\\.Z","_Z_axial_direction_mean"),
                       
-                      c("\\.meanFreq\\.\\.\\.X"," X axial direction frequency mean"),
-                      c("\\.meanFreq\\.\\.\\.Y"," Y axial direction frequency mean"),
-                      c("\\.meanFreq\\.\\.\\.Z"," Z axial direction frequency mean"),
+                      c("\\.meanFreq\\.\\.\\.X","_X_axial_direction_frequency_mean"),
+                      c("\\.meanFreq\\.\\.\\.Y","_Y_axial_direction_frequency_mean"),
+                      c("\\.meanFreq\\.\\.\\.Z","_Z_axial_direction_frequency_mean"),
                       
-                      c("\\.std\\.\\.\\.X"," X axial direction standard deviation"),
-                      c("\\.std\\.\\.\\.Y"," Y axial direction standard deviation"),
-                      c("\\.std\\.\\.\\.Z"," Z axial direction standard deviation"),
+                      c("\\.std\\.\\.\\.X","_X_axial_direction_standard_deviation"),
+                      c("\\.std\\.\\.\\.Y","_Y_axial_direction_standard_deviation"),
+                      c("\\.std\\.\\.\\.Z","_Z_axial_direction_standard_deviation"),
 
-                      c("tBodyBody","time domain body"),
-                      c("fBodyBody","frequency domain body"),
+                      c("tBodyBody","time_domain_body"),
+                      c("fBodyBody","frequency_domain_body"),
                       
-                      c("tBody","time domain body"),
-                      c("fBody","frequency domain body"),
+                      c("tBody","time_domain_body"),
+                      c("fBody","frequency_domain_body"),
                       
-                      c("tGravity","time domain gravity"),
+                      c("tGravity","time_domain_gravity"),
                       
-                      c("Acc"," acceleration"),
-                      c("Gyro"," velocity"),
+                      c("Acc","_acceleration"),
+                      c("Gyro","_velocity"),
                       
-                      c("Mag"," magnitude"),
-                      c("\\.mean\\.\\."," mean"),
-                      c("\\.std\\.\\."," standard deviation"),
-                      c("Jerk"," jerk"),
+                      c("Mag","_magnitude"),
+                      c("\\.mean\\.\\.","_mean"),
+                      c("\\.std\\.\\.","_standard_deviation"),
+                      c("Jerk","_jerk"),
                       
-                      c("\\.meanFreq\\.\\."," frequency mean"),
+                      c("\\.meanFreq\\.\\.","_frequency_mean"),
 
-                      c("angle\\.X\\.gravityMean\\.","angle gravity X axial direction mean"),
-                      c("angle\\.Y\\.gravityMean\\.","angle gravity Y axial direction mean"),
-                      c("angle\\.Z\\.gravityMean\\.","angle gravity Z axial direction mean"),
+                      c("angle\\.X\\.gravityMean\\.","angle_gravity_X_axial_direction_mean"),
+                      c("angle\\.Y\\.gravityMean\\.","angle_gravity_Y_axial_direction_mean"),
+                      c("angle\\.Z\\.gravityMean\\.","angle_gravity_Z_axial_direction_mean"),
                       
-                      c("\\.gravityMean\\."," gravity axial direction mean")
+                      c("\\.gravityMean\\.","_gravity_axial_direction_mean")
                       )
   
   # replace variable measure names with explicit descriptive names
